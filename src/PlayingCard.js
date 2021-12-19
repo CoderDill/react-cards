@@ -5,7 +5,7 @@ import "./PlayingCard.css";
 
 /* Renders a single playing card. */
 function PlayingCard({ front, back = backOfCard }) {
-  const [isFaceUp, setIsFaceUp ] = useFlip();
+  const [isFaceUp, setIsFaceUp ] = useFlip(true);
   return (
     <img
       src={isFaceUp ? front : back}

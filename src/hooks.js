@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-const useFlip = () => {
-  const [flip, setFlip] = useState(true);
+const useFlip = (initialState = true) => {
+  const [flip, setFlip] = useState(initialState);
   const toggleFlip = () => {
     setFlip((up) => !up);
   };
